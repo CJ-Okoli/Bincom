@@ -5,9 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Single Page Personal Website</title>
     <style>
+        .centre-piece {
+            width: 33%;
+            position: relative;
+            float: left;
+
+        }
         .slide-container {
             position: relative;
             max-width: 100%;
+            border: solid rgb(75, 52, 52);
+            border-width: 5px;
         }
         .slide img {
             object-fit: contain;
@@ -45,7 +53,21 @@
         .active {
             background-color: burlywood;
         }
-
+        .left-container {
+            position: relative;
+            float: left;
+            width: 33%;
+            display: inline;
+        }
+        .right-container {
+            width: 33%;
+            float: right;
+            position: relative;
+        }
+        body {
+            background-image: linear-gradient(rgb(68, 68, 49), rgb(197, 197, 137), rgb(68, 68, 49));
+        }
+      
         .pic {
             /* justify-items: center;
             align-items: center; */
@@ -54,30 +76,85 @@
 </head>
 
 <body>
-    <h1>Chukwudifu Jason; Okoli</h1>
-    <div class="slide-container">
-        <div class="effect slide">
-            <img src="4fb5e045-c738-4236-a8a6-777ae046b94c.JPG" alt="">
+    <div><h1 style="text-align:center;">Chukwudifu Jason; Okoli</h1>
+    </div>
+
+    <div class="left-container">
+        <h2>EXPERIENCE</h2>
+        <section>
+            Html, css, and javascript for web developers, (Online)— Coursera <br>
+            (June 2020) <br>
+            <a href="https://www.coursera.org/learn/html-css-javascript-for-web-developers/" target="_blank">https://www.coursera.org/learn/html-css-javascript-for-web-developers/</a>
+            
+        </section>
+        <h2>EDUCATION</h2>
+        <section>
+            Atlantic Hall, Lagos— Secondary School <br>
+            (2011 - 2017) <br>
+            University of Lagos, Akoka— LLB <br>
+            Faculty of Law, 300L <br>
+            (Since 2017)            
+        </section>
+        <h2>PROJECTS</h2>
+        <section>
+            Coursera Module Assignment <br>
+            <a href="https://cj-okoli.github.io/Coursera-Assignment/mod3_solution/index.html" target="_blank">https://cj-okoli.github.io/Coursera-Assignment/mod3_solution/index.html</a>
+        </section>
+        <h2><a href="https://github.com/CJ-Okoli" target="_blank">Github Account</a> </h2>
+    </div>
+
+    <div class="centre-piece">
+        <div class="slide-container">
+            <div class="effect slide">
+                <img src="4fb5e045-c738-4236-a8a6-777ae046b94c.JPG" alt="">
+            </div>
+            <div class="effect slide">
+                <img src="IMG_1522.jpg" alt="">
+            </div>
+            <div class="effect slide">
+                <img src="IMG_7274.jpg" alt="">
+            </div>
+            <div class="effect slide">
+                <img src="IMG_4425.jpg" alt="">
+            </div>
+            <div class="effect slide">
+                <img src="IMG_4515.jpg" alt="">
+            </div>
         </div>
-        <div class="effect slide">
-            <img src="IMG_1522.jpg" alt="">
-        </div>
-        <div class="effect slide">
-            <img src="IMG_3475.jpg" alt="">
-        </div>
-        <div class="effect slide">
-            <img src="IMG_4425.jpg" alt="">
-        </div>
-        <div class="effect slide">
-            <img src="IMG_4515.jpg" alt="">
+        <div class="dot-container">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
     </div>
-    <div class="dot-container">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
+
+    <div class="right-container">
+        <h2>SKILLS</h2>
+        <section>
+            HTML <br>
+            CSS <br>
+            JavaScript
+        </section>
+        <h2>LANGUAGES</h2>
+        <section>
+            English <br>
+            Igbo <br>
+            French (Basic)
+        </section>
+        <h2>Interests</h2>
+        <section>
+            Mobile App Trainee Development <br>
+            I have a new found passion for tech development, programming and I am very keen to learn.  
+        </section>
+        <h2>Information</h2>
+        <section>
+            January 9th, 2001;<br>
+            Lagos, Nigeria. <br>
+            (234) 09034591562;<br>
+            okolijason2@gmail.com
+        </section>
     </div>
 
 
