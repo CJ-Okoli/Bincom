@@ -4,9 +4,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Single Page Personal Website</title>
+    <style>
+        .slide-container {
+            position: relative;
+            max-width: 100%;
+        }
+        .slide img {
+            object-fit: contain;
+            width: 100%;
+            max-height: 500px;
+            
+            /* object-position: center;
+            text-align: center;
+            float: 0, 50%; */
+        }
+        .effect {
+            animation-name: effect;
+            animation-duration: 1s;
+        
+        }
+        @keyframes effect{
+            from{
+                opacity: 0.3;
+            }
+            to{
+                opacity: 1;
+            }
+        }
+        .dot-container {
+            text-align: center;
+        }
+        span {
+            border-radius: 50%;
+            height: 15px;
+            width: 15px;
+            background-color: brown;
+            display: inline-block;
+            transition: all 0.6s linear;
+        }
+        .active {
+            background-color: burlywood;
+        }
+
+        .pic {
+            /* justify-items: center;
+            align-items: center; */
+        } */
+    </style>
 </head>
+
 <body>
     <h1>Chukwudifu Jason; Okoli</h1>
-    
+    <div class="slide-container">
+        <div class="effect slide">
+            <img src="4fb5e045-c738-4236-a8a6-777ae046b94c.JPG" alt="">
+        </div>
+        <div class="effect slide">
+            <img src="IMG_1522.jpg" alt="">
+        </div>
+        <div class="effect slide">
+            <img src="IMG_3475.jpg" alt="">
+        </div>
+        <div class="effect slide">
+            <img src="IMG_4425.jpg" alt="">
+        </div>
+        <div class="effect slide">
+            <img src="IMG_4515.jpg" alt="">
+        </div>
+    </div>
+    <div class="dot-container">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+
+    <script>
+        var index=0;
+        show();
+        function show() {
+            var i;
+            var slides=document.getElementsByClassName("slide");
+            var dots=document.getElementsByTagName("span");
+            for(i=0;i<slides.length;i++) {
+                slides[i].style.display=" none";
+            }
+            index=index+1;
+            if(index>slides.length) {
+                index=1;
+            }
+            for(i=0;i<dots.length;i++) {
+                dots[i].className=dots[i].className.replace(" active", "");
+            }
+            slides[index-1].style.display="block";
+            dots[index-1].className+=" active";
+            setTimeout(show, 1500);
+
+        }
+
+
+    </script>
 </body>
 </html>
