@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
     <title>Single Page Personal Website</title>
     <style>
         .centre-piece {
@@ -21,10 +21,6 @@
             object-fit: contain;
             width: 100%;
             max-height: 500px;
-            
-            /* object-position: center;
-            text-align: center;
-            float: 0, 50%; */
         }
         .effect {
             animation-name: effect;
@@ -57,7 +53,7 @@
             position: relative;
             float: left;
             width: 33%;
-            display: inline;
+            
         }
         .right-container {
             width: 33%;
@@ -67,11 +63,24 @@
         body {
             background-image: linear-gradient(rgb(68, 68, 49), rgb(197, 197, 137), rgb(68, 68, 49));
         }
-      
-        .pic {
-            /* justify-items: center;
-            align-items: center; */
-        } */
+        @media only screen and (max-width: 768px) {
+            .centre-piece {
+                width: 100%;
+                float: left;
+                position: relative;
+            }
+            .left-container {
+                width: 100%;
+                text-align: center;
+                position: relative;
+                float: right;
+            }
+            .right-container {
+                width: 100%;
+                text-align: center;
+                position: relative;
+            }
+} 
     </style>
 </head>
 
